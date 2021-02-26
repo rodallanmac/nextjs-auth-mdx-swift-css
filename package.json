@@ -1,0 +1,25 @@
+{
+  "name": "nextjs-mdx-auth",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^1.6.22",
+    "@next/mdx": "^10.0.3",
+    "classnames": "2.2.6",
+    "date-fns": "2.10.0",
+    "gray-matter": "4.0.2",
+    "next": "latest",
+    "next-auth": "^3.5.1",
+    "next-mdx-remote": "^1.0.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "remark": "11.0.2",
+    "remark-html": "10.0.0"
+  },
+  "devDependencies": {},
+  "license": "MIT"
+}

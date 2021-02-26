@@ -1,0 +1,6 @@
+@import url('https://swiftcss.netlify.app/swift.css');
+@import url('https://swiftcss.netlify.app/swift_colours.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+/* 2. Prevent adjustments of font size after orientation changes in iOS. */
+html { font-family: 'Inter', sans-serif; }
