@@ -12,6 +12,7 @@
     "classnames": "2.2.6",
     "date-fns": "2.10.0",
     "gray-matter": "4.0.2",
+    "lodash": "^4.17.21",
     "next": "latest",
     "next-auth": "^3.5.1",
     "next-mdx-remote": "^1.0.0",

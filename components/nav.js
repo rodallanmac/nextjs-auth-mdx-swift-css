@@ -10,7 +10,7 @@ const Nav = () => {
   const [session] = useSession()
 
   return (
-    <div className="w-100  grad-blue-dynamic o-80">
+    <div className="w-100  bg-cyan-900 o-80">
     <nav className="w-100 center mw-1400 ph2 pv1">
       <div className="flex justify-between">
         

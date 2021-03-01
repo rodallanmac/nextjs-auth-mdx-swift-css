@@ -14,7 +14,7 @@ export default function Index() {
         </Head>
        
         <div className="ph0 pb3">
-              <div className="w-100 center grad-blue-dynamic cf">
+              <div className="w-100 center bg-cyan-900 cf">
                 <div className="w-100 cover bg-bottom-left " style={{ backgroundImage: 'url(/clouds.svg)' }}>
                     <div className="mw-1400 ph2 center">
                       <div className="f1 fw7 gray-100 lh-075 pt3">Swift <span className="fw3">css</span></div>
