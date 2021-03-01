@@ -5,7 +5,7 @@ import CoverImage from '../components/cover-image'
 export default function PostHeader({ title, coverImage, date, author }) {
   return (
     <>
-        <div className="f2 fw7 pb075 mw-900 ">{title}</div>
+        <div className="f3 pb075 mw-800 lh-1">{title}</div>
         {author ?
         <div className="flex items-center pb075">
         {author ? <img src={author.picture} className="w3 h3 br-100 mr1 dib" alt={author.name} /> : ''}

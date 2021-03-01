@@ -8,7 +8,7 @@ import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import { mdxToString, stringToMdx} from '../../lib/mdxSerialization'
 import Link from "next/link";
-import uniq from 'lodash/uniq';
+
 
 export default function Post({ post, allPostsMenu }) {
 

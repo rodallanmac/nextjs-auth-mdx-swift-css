@@ -9,7 +9,7 @@ export default function Layout({ preview, children }) {
       <Meta />
       <Nav/>
       <div className="w-100 center cf ">
-        <main>{children}</main>
+        <div className="min-vh-100 cf">{children}</div>
         <Footer />
       </div>
     </>
