@@ -15,11 +15,11 @@ export default function Post({ post, allPostsMenu }) {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuFunction = (e) => {
-    e.preventDefault() // Operate the drop down
+    e.preventDefault() 
     !isMenuOpen ? setIsMenuOpen(true) : setIsMenuOpen(false)
   }
 
-
+  // THIS ADDS CATEGORIES TO YOUR NAV AND IN ORDER
   const uniqCategories = ["getting started", "typography", "colours", "components", "containers", ];
 
 
@@ -42,13 +42,13 @@ export default function Post({ post, allPostsMenu }) {
                 </title>
               </Head>
 
-             <div className="relative w-100 ">
-              <div onClick={menuFunction} className="db dn-l w-100 mw-1400 center pa1 ph2 cf bb b-black-10 flex items-center pointer">
+             <div className="relative w-100">
+              <div onClick={menuFunction} className="db dn-l w-100 mw-1400 center pa1 ph2 cf bb b-black-10 flex items-center pointer h4 cf">
                   <svg className="h24 mr05" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
                 <span>menu</span> 
               </div>
 
-              <div onMouseUp={menuFunction}  id="menu" className={ isMenuOpen ? "w-100 fixed z-999 bottom-0 left-0 right-0 min-vh-100 max-vh-100 bg-gray-50 bt bw1 b-black pa1 cf overflow-hidden overflow-y-scroll pb2" : "dn" }>
+              <div style={{top: '124px'}} onMouseUp={menuFunction}  id="menu" className={ isMenuOpen ? "w-100 fixed z-999 bottom-0 left-0 right-0 min-vh-100 max-vh-100 bg-gray-50 bt bw1 b-black-05 pa1 cf overflow-hidden overflow-y-scroll pb2 animate fadeInRight" : "dn" }>
  
                     { uniqCategories.map( (cat) =>  
                                            <div key={cat} text={cat}>

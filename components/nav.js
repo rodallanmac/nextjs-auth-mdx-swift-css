@@ -10,9 +10,9 @@ const Nav = () => {
   const [session] = useSession()
 
   return (
-    <div className="w-100  bg-cyan-900 o-80">
-    <nav className="w-100 center mw-1400 ph2 pv1">
-      <div className="flex justify-between">
+    <div className="w-100  bg-cyan-900 bb b-white-10">
+    <nav className="w-100 center mw-1400 flex items-center justify-between ph2 h4">
+
         
           <div className="flex items-center">
             <Link href={`/`}><div className="f3 fw4 link pointer gray-50"> swift css</div></Link>
@@ -43,7 +43,7 @@ const Nav = () => {
             )}
           </div>
 
-      </div>
+     
     
     </nav>  
     </div>
