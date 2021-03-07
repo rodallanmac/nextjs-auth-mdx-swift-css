@@ -10,12 +10,12 @@ const Nav = () => {
   const [session] = useSession()
 
   return (
-    <div className="w-100  bg-cyan-900 bb b-white-10">
+    <div className="w-100  bg-black-900 bb b-white-30">
     <nav className="w-100 center mw-1400 flex items-center justify-between ph2 h4">
 
         
           <div className="flex items-center">
-            <Link href={`/`}><div className="f3 fw4 link pointer gray-50"> swift css</div></Link>
+            <Link href={`/`}><div className="f3 fw4 link pointer gray-50"> Typeset css</div></Link>
           </div>
 
           <div>

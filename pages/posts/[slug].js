@@ -43,20 +43,20 @@ export default function Post({ post, allPostsMenu }) {
               </Head>
 
              <div className="relative w-100">
-              <div onClick={menuFunction} className="db dn-l w-100 mw-1400 center pa1 ph2 cf bb b-black-10 flex items-center pointer h4 cf">
-                  <svg className="h24 mr05" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
+              <div onClick={menuFunction} className="cyan-900 db dn-l w-100 mw-1400 center pa1 ph2 cf bb b-black-10 flex items-center pointer h4 cf">
+                  <svg className="h24 mr05 cyan-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
                 <span>menu</span> 
               </div>
 
-              <div style={{top: '124px'}} onMouseUp={menuFunction}  id="menu" className={ isMenuOpen ? "w-100 fixed z-999 bottom-0 left-0 right-0 min-vh-100 max-vh-100 bg-gray-50 bt bw1 b-black-05 pa1 cf overflow-hidden overflow-y-scroll pb2 animate fadeInRight" : "dn" }>
+              <div style={{top: '124px'}} onMouseUp={menuFunction}  id="menu" className={ isMenuOpen ? "w-100 fixed z-999 bottom-0 left-0 right-0 min-vh-100 max-vh-100 bg-cyan-900 bt bw1 b-black-05 pa1 cf overflow-hidden overflow-y-scroll pb2 animate fadeInRight" : "dn" }>
  
                     { uniqCategories.map( (cat) =>  
                                            <div key={cat} text={cat}>
-                                              <div className="f7 fw5 black-700 ttu pb025 pt1">{cat}</div>
+                                              <div className="f7 fw5 white-90 ttu pb025 pt1 ls-sm">{cat}</div>
                                               
                                               {allPostsMenu ? allPostsMenu.filter( x => x.category === cat ).map( (x) =>  
                                               <Link  key={x.title} as={`/posts/${x.slug.replace(/\.mdx?$/, '')}`} href={`/posts/[slug]`} >
-                                              <a className="link black-500 fw4">
+                                              <a className="link white-80 hover-white-100 fw4">
                                                 <div className='f6'>{x.title}</div>
                                               </a>
                                               </Link> 

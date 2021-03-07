@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Index() {
 
   return (
-    <div className="">
+ 
       <Layout>
         <Head>
           <title>Swiftcss with {CMS_NAME}</title>
@@ -17,8 +17,15 @@ export default function Index() {
               <div className="w-100 center bg-cyan-900 cf">
                 <div className="w-100 cover bg-bottom-left " style={{ backgroundImage: 'url(/clouds.svg)' }}>
                     <div className="mw-1400 ph2 center">
-                      <div className="f1 fw7 gray-100 lh-075 pt3">Swift <span className="fw3">css</span></div>
-                      <div className="f4 ls-xsm gray-100 mw600 fw3 pb2">It's fast, light, responsive and accurate to a pixel </div>
+                      <div>
+                        <div className="f1 fw7 gray-100 lh-075 pt3">Swift <span className="fw3">css</span></div>
+                        <div className="f4 ls-xsm gray-100 mw600 fw3 pb1">It's fast, light, responsive and accurate to a pixel </div>
+                        <Link href={`/posts/introduction`} >
+                          <a className="link ls-xsm br-1 bg-white cyan-900  ph2 pv05 f6 pointer tc center dib hover-bg-white-30 hover-white-100">
+                          explore
+                          </a>
+                        </Link>
+                      </div>
                     </div>
                     <div className="flex items-end ">
                     <div className="w-10 w-50-l"></div>
@@ -27,17 +34,12 @@ export default function Index() {
             </div>
             </div>
           </div>
-
-          <div className="ph2 pb2">
-          <Link href={`/posts/introduction`} >
-                    <a className="link">
-                      <div className='f5'>Explore</div>
-                    </a>
-          </Link>
-          </div>
+        
+         
+ 
        
       </Layout>
-    </div>
+    
   )
 }
 
